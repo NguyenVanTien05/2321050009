@@ -1,0 +1,91 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f9fafb;
+  color: #374151;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background-color: #2563eb;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.main-content {
+  text-align: center;
+  padding: 24px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 32px;
+}
+
+.methods-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.method-card {
+  width: 240px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.method-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.method-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+.method-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #1e40af;
+}
+
+.footer {
+  text-align: center;
+  padding: 16px;
+  background-color: #f3f4f6;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
