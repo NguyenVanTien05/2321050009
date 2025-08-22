@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 3</title>
+  </head>
+  <body>
+    <marquee>
+        <img src="../anh/img.png" alt="">
+    </marquee>
+    <h1>FORM</h1>
+    <form>
+      <div>
+        <p><b>Họ và tên</b></p>
+        <input type="text" name="hovaten" placeholder="Điền họ và tên" />
+      </div>
+      <div>
+        <p><b>Mã số sinh viên</b></p>
+        <input type="text" name="mssv" value="2321050009" readonly />
+      </div>
+      <div>
+        <p><b>Mật khẩu</b></p>
+        <input type="password" name="matkhau">
+      </div>
+      <div>
+        <p><b>Giới tính</b></p>
+        <input type="radio" name="gioitinh" value="nam" />Nam<br />
+        <input type="radio" name="gioitinh" value="nam" />Nữ<br />
+      </div>
+      <div>
+        <p><b>Giới thiệu bản thân</b></p>
+        <textarea name="gioithieu">Giới thiệu bản thân</textarea>
+      </div>
+      <div>
+        <div>
+          <p><b>Sở thích</b></p>
+          <input type="checkbox" name="sothich" value="game" />Game<br />
+          <input type="checkbox" name="sothich" value="music" />Music<br />
+          <input type="checkbox" name="sothich" value="sport" />Sport<br />
+        </div>
+        <div>
+        <p><b>Tuổi</b></p>
+        <input type="number" name="tuoi" step="1">
+      </div>
+      <div>
+        <p><b>Ngày tháng năm sinh</b></p>
+        <input type="date" name="ngaythangnamsinh">
+      </div>
+      <div>
+        <p><b>Chọn màu</b></p>
+        <input type="color" name="mausac">
+      </div>
+        </div>
+        <p><b>Trình duyệt yêu thích</b></p>
+        <select name="browsers">
+            <option value="Google Chrome">Google Chrome</option>
+            <option value="Microsoft Edge">Microsoft Edge</option>
+            <option value="Safari">Safari</option>
+            <option value="Cốc Cốc">Cốc Cốc</option>
+            <option value="FireFox">FireFox</option>
+        </select>
+      </div>
+      <div>
+        0<input type="range" value="50">100
+      </div>
+        <p><b>Email</b></p>
+        <input type="email" name="eamil" placeholder="abcdxyz@gmail.com" />
+      </div>
+      <div>
+        <p><b>SĐT</b></p>
+        <input
+          name="sdt"
+          type="tel"
+          placeholder="Dạng số: 1-234-567-8910"
+          required
+          pattern="([0]{1}([3489]{1}[0-9]{8}))"
+        />
+      </div>
+      <br />
+      <div>
+        <input type="submit" />
+        <input type="reset">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/h6db1gYLNlE?si=2D6ny50OJjQ-b94p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <audio controls>
+        <source src="" type="">
+      </audio>
+      <video controls width="360" height="220">
+        <source src="" type="">
+      </video>
+    </form>
+  </body>
+</html>
