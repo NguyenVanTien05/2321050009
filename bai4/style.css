@@ -1,0 +1,21 @@
+h1 {
+  background-color: blueviolet;
+}
+h2 {
+  background-color: rgb(43, 226, 43);
+}
+.box1 {
+  background-color: rgb(157, 43, 199);
+  /* Magin cách xung quanh = số px ( trên, phải , dưới, trái) */
+  margin: 10px 20px 30px 40px;
+}
+.box2 {
+  background-color: #d50e0e;
+  width: 50%;
+  /* auto là căn giữa màn */
+  margin: 20px auto;
+}
+.box3 {
+  background-color: blue;
+  padding: 50px;
+}
