@@ -1,0 +1,36 @@
+body {
+  margin: auto;
+}
+nav {
+  background-color: #0c4ca3;
+}
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.danhmuclienket {
+  color: aliceblue;
+  text-decoration: none;
+}
+li {
+  padding: 10px;
+}
+.boder {
+  border-right: 1px solid grey;
+}
+.banner-qc {
+  display: flex;
+  justify-content: center;
+}
+.qc {
+  display: flex;
+  justify-content: center;
+}
+header {
+  border-bottom: 2px solid black;
+}
+.tintuc {
+  color: #0c4ca3;
+  display: flex;
+}
