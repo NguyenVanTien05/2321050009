@@ -1,0 +1,132 @@
+:root {
+  --bg: #0f1114;
+  --panel: #141516;
+  --muted: #bfc3c8;
+  --accent: #1db954;
+  --radius: 12px;
+  --sidebar-w: 240px;
+  --right-w: 300px;
+  --player-h: 80px;
+  --gap: 20px;
+  font-family: Inter, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  background: var(--bg);
+  color: #eee;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: var(--sidebar-w) 1fr var(--right-w);
+  gap: var(--gap);
+  height: 100%;
+  padding: 20px;
+  padding-bottom: calc(var(--player-h) + 20px);
+}
+
+.sidebar {
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+.sidebar h3 {
+  margin-bottom: 12px;
+}
+.sidebar ul {
+  list-style: none;
+}
+.sidebar li {
+  margin: 6px 0;
+  cursor: pointer;
+}
+.sidebar li:hover {
+  color: var(--accent);
+}
+
+.content {
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 16px;
+  overflow-y: auto;
+}
+.searchbar {
+  margin-bottom: 20px;
+}
+.searchbar input {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--radius);
+  border: none;
+  background: #222;
+  color: #eee;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+}
+.card {
+  background: #222;
+  border-radius: var(--radius);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.card:hover {
+  background: #333;
+}
+
+.now .cover {
+  width: 100%;
+  height: 150px;
+  background: #333;
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+}
+.now p {
+  font-weight: bold;
+}
+.now span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.player {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--player-h);
+  background: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.controls {
+  font-size: 20px;
+}
+.progress {
+  flex: 1;
+  margin: 0 20px;
+  height: 4px;
+  background: #333;
+  border-radius: 2px;
+  position: relative;
+}
+.progress .bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 20%;
+  background: var(--accent);
+  border-radius: 2px;
+}
