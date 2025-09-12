@@ -1,0 +1,231 @@
+body {
+  background-color: black;
+}
+footer {
+  color: white;
+  list-style: none;
+  display: flex;
+}
+header.timkiem {
+  display: flex;
+  padding: 10px;
+  color: white;
+  justify-self: space-between;
+  align-items: center;
+}
+.dautrai {
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+  margin: 5px;
+}
+.ngoacphai {
+  line-height: 35px;
+}
+.ngoactrai {
+  width: 50px;
+  color: rgb(105, 104, 104);
+  line-height: 35px;
+}
+.cham {
+  margin-left: 5px;
+  line-height: 20px;
+  font-size: 30px;
+}
+.daugiua {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex: 1;
+}
+.dauphai {
+  display: flex;
+  gap: 10px;
+}
+.logoanh {
+  width: 40px;
+  border-radius: 100%;
+}
+.thanhtimkiem {
+  border-radius: 10px;
+  height: 40px;
+  width: 250px;
+}
+.box {
+  display: flex;
+  gap: 10px;
+}
+.box1 {
+  background-color: #121212;
+  width: 320px;
+  border-radius: 10px;
+  color: white;
+  height: 540px;
+}
+.box2 {
+  background-color: #121212;
+  flex: 1;
+  border-radius: 10px;
+  color: white;
+  overflow-y: auto;
+  height: 540px;
+  scrollbar-width: none;
+}
+.box21 {
+  height: 220px;
+  background: linear-gradient(to bottom, #4b3794, #121212);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.box3 {
+  background-color: #121212;
+  width: 380px;
+  border-radius: 10px;
+  color: white;
+  height: 540px;
+}
+.pdbox {
+  display: flex;
+  margin-top: 10px;
+}
+.pdbox1 {
+  flex: 1;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.pdbox2 {
+  margin-top: 5px;
+  margin-right: 10px;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.tinbox {
+  display: flex;
+  gap: 5px;
+  margin: 10px 0px;
+}
+.tinbox1 {
+  border: 1px solid rgba(255, 255, 255, 0.068);
+  padding: 5px;
+  margin: 10px 5px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.068);
+}
+.baihat1 {
+  flex: 1;
+  list-style: none;
+  margin: 0px 10px;
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+  align-items: center;
+}
+.anhbaihat {
+  width: 60px;
+  border-radius: 10px;
+}
+.tenbai {
+  margin-top: -20px;
+}
+.phubai {
+  margin-top: -10px;
+}
+.baihatdangchay {
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.anhgiua1 {
+  width: 60px;
+  margin-top: 10px;
+}
+.anhgiua {
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+}
+.ftlogo1 {
+  width: 50px;
+  border-radius: 100px;
+  margin-top: 15px;
+}
+.anhgiua1 {
+  width: 30px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.tenbaift {
+  margin-top: -10px;
+}
+.tieude {
+  margin: 10px 10px;
+}
+.anhphai {
+  flex: 1;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.formanh {
+  width: 340px;
+  margin-top: -9px;
+}
+.boxtenbaiphai {
+  margin: 10px 10px;
+  list-style: none;
+  display: flex;
+}
+.phubaiphai {
+  margin-top: -20px;
+}
+.baihatphai {
+  margin-top: -20px;
+  flex: 1;
+}
+.tichbaiphai {
+  width: 30px;
+  border-radius: 100px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.baihat3 {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin-left: 10px;
+}
+.tenbaidk {
+  flex: 1;
+  margin-top: -10px;
+}
+.fl {
+  margin-top: 15px;
+  margin-right: 20px;
+  border: 2px solid white;
+  padding: 5px;
+  height: 20px;
+  width: 50px;
+  border-radius: 20px;
+  text-align: center;
+}
+.logodky {
+  width: 340px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.anhtogiua {
+  width: 150px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+.overfl1 {
+  overflow-y: auto;
+  height: 425px;
+}
+.overfl3 {
+  overflow-y: auto;
+  height: 500px;
+}

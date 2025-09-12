@@ -1,132 +1,295 @@
-:root {
-  --bg: #0f1114;
-  --panel: #141516;
-  --muted: #bfc3c8;
-  --accent: #1db954;
-  --radius: 12px;
-  --sidebar-w: 240px;
-  --right-w: 300px;
-  --player-h: 80px;
-  --gap: 20px;
-  font-family: Inter, Arial, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 body {
-  height: 100vh;
-  background: var(--bg);
-  color: #eee;
+  background-color: black;
 }
-
-.app {
-  display: grid;
-  grid-template-columns: var(--sidebar-w) 1fr var(--right-w);
-  gap: var(--gap);
-  height: 100%;
-  padding: 20px;
-  padding-bottom: calc(var(--player-h) + 20px);
+header.timkiem {
+  display: flex;
+  padding: 10px;
+  color: white;
+  justify-self: space-between;
+  align-items: center;
 }
-
-.sidebar {
-  background: var(--panel);
-  border-radius: var(--radius);
-  padding: 16px;
+.dautrai {
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+  margin: 5px;
 }
-.sidebar h3 {
-  margin-bottom: 12px;
+.ngoacphai {
+  line-height: 35px;
 }
-.sidebar ul {
-  list-style: none;
+.ngoactrai {
+  width: 50px;
+  color: rgb(105, 104, 104);
+  line-height: 35px;
 }
-.sidebar li {
-  margin: 6px 0;
-  cursor: pointer;
+.cham {
+  margin-left: 5px;
+  line-height: 20px;
+  font-size: 30px;
 }
-.sidebar li:hover {
-  color: var(--accent);
+.daugiua {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex: 1;
+}
+.dauphai {
+  display: flex;
+  gap: 10px;
+}
+.logoanh {
+  width: 40px;
+  border-radius: 100%;
+}
+.thanhtimkiem {
+  border-radius: 10px;
+  height: 40px;
+  width: 250px;
+}
+.anhthongbao {
+  border-radius: 100%;
+}
+.box1 {
+  background-color: #121212;
+  width: 320px;
+  height: 530px;
+  border-radius: 10px;
+}
+.box2 {
+  background-color: #121212;
+  flex: 1;
+  border-radius: 10px;
+  height: 530px;
+}
+.box3 {
+  background-color: #121212;
+  width: 400px;
+  border-radius: 10px;
+  height: 530px;
 }
 
 .content {
-  background: var(--panel);
-  border-radius: var(--radius);
-  padding: 16px;
-  overflow-y: auto;
+  list-style: none; /* bỏ dấu chấm */
+  padding: 0; /* bỏ thụt trái mặc định */
+  margin: 0; /* bỏ margin mặc định */
+  width: 100%; /* chiếm toàn bộ chiều ngang màn */
 }
-.searchbar {
-  margin-bottom: 20px;
+.box {
+  display: flex;
+  gap: 10px;
 }
-.searchbar input {
+.pdbox {
+  display: flex;
+  flex: 1;
+  color: white;
+}
+.pdbox1 {
+  margin: 15px 0px 0px 10px;
+  flex: 1;
+}
+.pdbox2 {
+  margin: 10px 10px;
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 20px;
+}
+.tinbox {
+  color: white;
+  display: flex;
+  gap: 12px;
   width: 100%;
-  padding: 10px;
-  border-radius: var(--radius);
-  border: none;
-  background: #222;
-  color: #eee;
-}
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 16px;
-}
-.card {
-  background: #222;
-  border-radius: var(--radius);
-  padding: 20px;
-  text-align: center;
-  cursor: pointer;
-}
-.card:hover {
-  background: #333;
-}
-
-.now .cover {
-  width: 100%;
-  height: 150px;
-  background: #333;
-  border-radius: var(--radius);
+  margin-right: 20px;
+  margin-left: 10px;
   margin-bottom: 10px;
 }
-.now p {
-  font-weight: bold;
+.tinbox1 {
+  border: 1px solid rgba(255, 255, 255, 0.068);
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.068);
 }
-.now span {
-  color: var(--muted);
-  font-size: 13px;
+.anhbaihat {
+  width: 50px;
+  border-radius: 5px;
 }
-
-.player {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: var(--player-h);
-  background: #181818;
+.baihat0 {
+  color: white;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
+  gap: 10px;
+  margin-left: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.167);
+  width: 280px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.167);
 }
-.controls {
-  font-size: 20px;
+.baihat1 {
+  margin-top: 10px;
+  color: white;
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.167);
+  width: 280px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.167);
 }
-.progress {
+.tenbai {
+  margin-top: -10px;
   flex: 1;
-  margin: 0 20px;
-  height: 4px;
-  background: #333;
-  border-radius: 2px;
-  position: relative;
 }
-.progress .bar {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 20%;
-  background: var(--accent);
-  border-radius: 2px;
+.phubai {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+footer {
+  display: flex;
+  color: white;
+}
+.ftlogo1 {
+  border-radius: 100px;
+  width: 40px;
+  margin-top: 25px;
+}
+.anhgiua {
+  padding: 10px 0px;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+}
+.anhgiua1 {
+  width: 30px;
+  border-radius: 10px;
+}
+.baihatdangchay {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.baihatchay {
+  margin-top: 5px;
+  list-style: none;
+}
+.tieude {
+  color: white;
+  margin: 10px 0px;
+  margin-left: 20px;
+}
+.anhphai {
+  flex: 1;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.baihatphai {
+  color: white;
+  margin-left: 20px;
+  margin-top: -10px;
+  flex: 1;
+}
+.phubaiphai {
+  margin-top: -15px;
+}
+.boxtenbaiphai {
+  display: flex;
+}
+.tichbaiphai {
+  width: 30px;
+  border-radius: 100%;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.baihat3 {
+  margin-top: 10px;
+  color: white;
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+.fl {
+  color: white;
+  margin-top: 15px;
+  margin-right: 20px;
+  border: 2px solid white;
+  padding: 5px;
+  height: 17px;
+  width: 50px;
+  border-radius: 20px;
+  text-align: center;
+}
+.tenmuc {
+  color: white;
+  display: flex;
+  gap: 10px;
+  margin: 20px 20px;
+}
+.tenmuc1 {
+  border: 1px solid rgba(255, 255, 255, 0.068);
+  padding: 5px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.068);
+}
+.baihat2 {
+  color: white;
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.anhbaihatgiua {
+  width: 40px;
+  border-radius: 10px;
+}
+.baihatgiua {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.167);
+  border-radius: 10px;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.167);
+}
+.made {
+  color: white;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.madeduoi {
+  color: white;
+  display: flex;
+  margin: 0px 20px;
+}
+.h2made {
+  flex: 1;
+  margin: 0;
+}
+.limade {
+  margin-top: 5px;
+}
+.baihattob2 {
+  margin: 20px 20px;
+  gap: 10px;
+  color: white;
+}
+.anhbaihattob2 {
+  width: 100px;
+  margin-bottom: 5px;
+  border-radius: 20px;
+}
+.boxbaihat {
+  display: flex;
+  gap: 17px;
+}
+.overfl1 {
+  overflow-y: auto;
+  height: 440px;
+}
+.overfl3 {
+  overflow-y: auto;
+  height: 490px;
+}
+.overfl2 {
+  overflow-y: auto;
+  height: 355px;
 }
