@@ -1,0 +1,68 @@
+h1 {
+  color: rgb(56, 90, 243);
+  text-align: center;
+  margin: 20px 0px;
+}
+body {
+  background-color: rgba(186, 196, 196, 0.626);
+}
+.box {
+  background-color: white;
+  width: 500px;
+  height: 600px;
+  flex: 1;
+  margin: 0px 500px;
+  border-radius: 10px;
+}
+.box1 {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.taotaikhoan {
+  text-align: center;
+}
+.chuduoi {
+  margin-top: -20px;
+}
+.ntns {
+  display: flex;
+}
+.gtinh {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.box11 {
+  height: 30px;
+  width: 180px;
+}
+.box10 {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.ntns {
+  gap: 17px;
+  justify-content: center;
+  margin: 10px 0px;
+}
+.textbox {
+  height: 30px;
+  width: 120px;
+}
+.gtinh1 {
+  border: 1px solid rgba(13, 13, 13, 0.567);
+  width: 120px;
+  height: 30px;
+  justify-content: center;
+}
+.box21 {
+  height: 30px;
+  width: 400px;
+  margin-left: 10px;
+  margin: 10px 45px;
+}
+.gtinh2 {
+  justify-content: center;
+}
