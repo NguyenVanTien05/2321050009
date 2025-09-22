@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script src="scrip.js"></script>
+  <body>
+    <script>
+      document.writeln("Toi ten la" + "<br>");
+      //   Biến
+      let hoTen = " Nguyen Van Tien ";
+      document.writeln(hoTen);
+      //   Hằng
+      const pi = 3.14;
+      let SO1 = 10;
+      let SO2 = 5;
+      let KQ = 0;
+      KQ = SO1 + SO2;
+      document.writeln("<br>" + KQ);
+      KQ1 = SO1 * SO2;
+      document.writeln("<br>" + KQ1);
+      KQ2 = SO1 / SO2;
+      document.writeln("<br>" + KQ2 + "<br>");
+      SO1 += SO2;
+      document.writeln(SO1 + "<br>");
+      SO1 -= SO2;
+      document.writeln(SO1 + "<br>");
+      let KQ3;
+      document.writeln(KQ3 + "<br>");
+      let thongtinsinhvien = {
+        hoten: "Nguyen Van Tien",
+        tuoi: 20,
+        gioitinh: true,
+        lop: "DCCTCT68B",
+      };
+      document.writeln(
+        "Xin chao " +
+          thongtinsinhvien.hoten +
+          "<br>" +
+          "Tuoi : " +
+          thongtinsinhvien.tuoi +
+          "<br>" +
+          " Lop : " +
+          thongtinsinhvien.lop +
+          "<br>" +
+          "Gioi Tinh : " +
+          thongtinsinhvien.gioitinh +
+          "<br>"
+      );
+      let thongtindiachi = {
+        thanhpho: "Ha Noi",
+        huyen: "Suoi Hai",
+        thon: "3",
+      };
+      thongtinsinhvien.diachi = thongtindiachi;
+      let namday = 2025;
+      document.writeln(
+        "Xin chao " +
+          thongtinsinhvien.hoten +
+          "<br>" +
+          "Tuoi : " +
+          thongtinsinhvien.tuoi +
+          "<br>" +
+          " Lop : " +
+          thongtinsinhvien.lop +
+          "<br>" +
+          "Gioi Tinh : " +
+          thongtinsinhvien.gioitinh +
+          "<br>" +
+          "Thanh pho : " +
+          thongtinsinhvien.diachi.thanhpho +
+          "<br>" +
+          "Huyen : " +
+          thongtinsinhvien.diachi.huyen +
+          "<br>" +
+          "Thon : " +
+          thongtinsinhvien.diachi.thon +
+          "<br>" +
+          "Nam sinh : " +
+          (namday - thongtinsinhvien.tuoi)
+      );
+      let SO3 = "10";
+      SO3 = parseInt(SO3);
+      document.writeln("<br>" + typeof SO3);
+    </script>
+  </body>
+</html>

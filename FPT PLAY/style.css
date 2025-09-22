@@ -1,0 +1,151 @@
+header {
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  height: 60px;
+  z-index: 1000;
+  top: 0;
+}
+main {
+  margin-top: 80px;
+}
+body {
+  background-color: #121214;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.test1 {
+  display: flex;
+  color: white;
+  gap: 20px;
+  margin: 0px 200px;
+  justify-content: space-between;
+}
+.test11 {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.test12 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.test121 {
+  display: flex;
+  gap: 5px;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: red;
+}
+.banner2 {
+  padding: 0 200px;
+  margin: 20px 0px;
+}
+.banner1 {
+  padding: 0 200px;
+}
+.banner1 img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+.banner2 img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+.cachdeu {
+  padding: 0px 200px;
+}
+.anhphim1 img {
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+}
+.anhphim2 img {
+  width: 100%;
+  border-radius: 10px;
+  height: 120px;
+}
+.phimbox {
+  background-color: red;
+  height: 300px;
+  width: 220px;
+  border-radius: 10px;
+}
+.phimbox2 {
+  background-color: red;
+  height: 120px;
+  width: 200px;
+  border-radius: 10px;
+}
+.tenphim {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.fullbox1 {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+.banner3 img {
+  width: 100%;
+  margin: 30px 0px;
+  border-radius: 10px;
+  height: 120px;
+}
+footer {
+  background-color: black;
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+}
+.cachdeuft {
+  padding: 0px 200px;
+}
+.boxft1 {
+  display: flex;
+}
+.bocft11 {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  gap: 30px;
+}
+.boxft111 {
+  width: 250px;
+}
+.boxft111 img {
+  width: 90%;
+  margin-top: -10px;
+}
+.boxft112 {
+  width: 200px;
+}
+.boxft1111 {
+  display: flex;
+  width: 50%;
+  gap: 10px;
+}
+.iconft {
+  display: flex;
+  gap: 20px;
+}
+.duongke {
+  border: 1px solid white;
+  margin: 30px 0px;
+}
+.boxft2 {
+  display: flex;
+  justify-content: space-between;
+}
+li {
+  list-style: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}

@@ -1,68 +1,154 @@
 h1 {
-  color: rgb(56, 90, 243);
+  color: rgb(7, 98, 244);
   text-align: center;
-  margin: 20px 0px;
+  width: 100%;
+  font-size: 60px;
+  margin: 15px 0px;
 }
 body {
-  background-color: rgba(186, 196, 196, 0.626);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  justify-content: center;
+}
+main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 80px;
 }
 .box {
   background-color: white;
-  width: 500px;
-  height: 600px;
-  flex: 1;
-  margin: 0px 500px;
   border-radius: 10px;
+  border: 2px solid white;
+  height: 650px;
+  width: 450px;
 }
 .box1 {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-.taotaikhoan {
+  margin: -10px 0px;
   text-align: center;
 }
-.chuduoi {
-  margin-top: -20px;
+.box1 p {
+  margin-top: -10px;
+  font-size: 14px;
 }
-.ntns {
+.lop1 {
+  width: 100%;
   display: flex;
-}
-.gtinh {
-  display: flex;
-  gap: 20px;
   justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
 }
-.box11 {
+.lop11 {
   height: 30px;
-  width: 180px;
+  border-radius: 5px;
+  width: 200px;
 }
-.box10 {
-  display: flex;
+.duongke {
+  border-top: 1px solid black;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.lop2 {
+  text-align: center;
+  margin-top: -10px;
   gap: 20px;
-  justify-content: center;
+  display: flex;
 }
-.ntns {
-  gap: 17px;
+.cachdeu {
+  margin: 0px 10px;
+}
+.lop22 {
+  height: 30px;
+  width: 300px;
+  border-radius: 5px;
+}
+.box3 {
+  display: flex;
   justify-content: center;
+  gap: 20px;
+}
+.lop33 {
+  border: 1px solid black;
+  padding: 10px;
+  width: 120px;
+  justify-content: space-between;
+  display: flex;
+  border-radius: 5px;
+}
+.box4 {
   margin: 10px 0px;
+  display: flex;
 }
-.textbox {
+.lop44 {
+  width: 100%;
   height: 30px;
-  width: 120px;
+  border-radius: 5px;
 }
-.gtinh1 {
-  border: 1px solid rgba(13, 13, 13, 0.567);
+.box5 {
+  display: flex;
+}
+.dangky {
+  text-align: center;
+  margin-top: 30px;
+  border: 1px solid rgb(17, 192, 17);
+  padding: 10px;
   width: 120px;
-  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(17, 192, 17);
+  margin-bottom: 10px;
+}
+.cangiua {
+  display: flex;
   justify-content: center;
 }
-.box21 {
-  height: 30px;
-  width: 400px;
-  margin-left: 10px;
-  margin: 10px 45px;
+footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 200px;
+  background-color: white;
 }
-.gtinh2 {
-  justify-content: center;
+.cachdeuft {
+  margin: 0px 200px;
+}
+.box6 {
+  display: flex;
+}
+.box71 {
+  display: flex;
+  gap: 15px;
+}
+.box66 {
+  gap: 10px;
+  margin-top: 20px;
+}
+.box61 {
+  display: flex;
+  gap: 10px;
+}
+.box67 {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+.box68 {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+li {
+  list-style: none;
+}
+.box72 {
+  display: flex;
+  gap: 13px;
+}
+ul {
+  margin: 0;
+  padding: 0;
 }
