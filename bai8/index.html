@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let thongtindonhang = {
+        makhachhang: "ZHNUIOKNSKNB",
+      };
+      let thongtinkhachhang = {
+        hoten: "Nguyen Van Tien",
+        sdt: "0373249334",
+        thanthiet: "YES",
+      };
+      thongtindonhang.khachhang = thongtinkhachhang;
+      let sanpham = {
+        sp1: { masp: "SPM1223456", tensp: "SGK", soluong: 10, gia: 400000 },
+        sp2: { masp: "SPM2223456", tensp: "SGK", soluong: 10, gia: 300000 },
+        sp3: { masp: "SPM3223456", tensp: "SGK", soluong: 10, gia: 200000 },
+        sp4: { masp: "SPM4223456", tensp: "SGK", soluong: 10, gia: 10000 },
+      };
+      thongtindonhang.sanpham = sanpham;
+      let trangthaithanhtoan = true;
+      let diachigiaohang = {
+        thon: 3,
+        xa: "Suoi Hai",
+        huyen: "Ba Vi",
+        thanhpho: "Ha Noi",
+      };
+      let tong1 =
+        thongtindonhang.sanpham.sp1.gia * thongtindonhang.sanpham.sp1.soluong;
+      tong2 =
+        thongtindonhang.sanpham.sp2.gia * thongtindonhang.sanpham.sp2.soluong;
+      tong3 =
+        thongtindonhang.sanpham.sp3.gia * thongtindonhang.sanpham.sp3.soluong;
+      tong4 =
+        thongtindonhang.sanpham.sp4.gia * thongtindonhang.sanpham.sp4.soluong;
+      tong = tong1 + tong2 + tong3 + tong4;
+
+      thongtindonhang.diachi = diachigiaohang;
+      document.writeln(
+        thongtindonhang.makhachhang +
+          " " +
+          thongtindonhang.khachhang.hoten +
+          " " +
+          thongtindonhang.khachhang.sdt +
+          " " +
+          thongtindonhang.khachhang.thanthiet +
+          " " +
+          thongtindonhang.sanpham.sp1.masp +
+          " " +
+          thongtindonhang.sanpham.sp1.tensp +
+          " " +
+          thongtindonhang.sanpham.sp1.soluong +
+          " " +
+          thongtindonhang.sanpham.sp1.gia +
+          " " +
+          trangthaithanhtoan +
+          " " +
+          thongtindonhang.diachi.thon +
+          " " +
+          thongtindonhang.diachi.huyen +
+          " " +
+          thongtindonhang.diachi.thanhpho +
+          " " +
+          tong1 +
+          " " +
+          tong +
+          "<br>"
+      );
+      // STRING
+      let hoten = "Nguyen Van Tien";
+      document.writeln(hoten.length);
+      document.writeln(hoten[0] + hoten[7]);
+      document.writeln(hoten.slice(11, 15));
+      document.writeln(hoten.replace("Nguyen", "Mai"));
+      document.writeln(hoten.toUpperCase());
+      document.writeln(hoten.indexOf("V"));
+      document.writeln("La GOAT");
+      document.writeln(hoten.includes("v"));
+      document.writeln(hoten.split(""));
+      document.writeln(hoten.startsWith("Nguyen") + "<br>");
+      let pi = 3.14098997394738437843;
+      document.writeln(pi.toFixed(5));
+      document.writeln(isNaN(10));
+      let today = new Date();
+      document.writeln(today.getDate());
+    </script>
+  </body>
+</html>
