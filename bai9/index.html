@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [1, 2, 3, 4, 5];
+      document.writeln("Vị trí của phần tử arr[] :");
+      document.writeln(arr[2] + "<br>");
+      document.writeln("Tìm xem có hay ko indexOf :");
+      document.writeln(arr.indexOf(5) + "<br>");
+      arr[3] = 100;
+      document.writeln("Thay thế phần tử arr[] = n :");
+      document.writeln(arr + "<br>");
+      let a, b, c, d;
+      a = [1, 2, 3, 4, 5];
+      b = "javacrip";
+      c = [43, "JS"];
+      d = a.concat(b, c);
+      document.writeln("Gộp mảng a.concat(n) : ");
+      document.writeln(d + "<br>");
+      d.pop();
+      document.writeln("Bỏ phần tử cuối d.pop() : ");
+      document.writeln(d + "<br>");
+      d.push("TEST");
+      document.writeln("Thêm phần tử vào cuối d.push() : ");
+      document.writeln(d + "<br>");
+      d.shift();
+      document.writeln("Xóa phần tử vào đầu d.shift() : ");
+      document.writeln(d + "<br>");
+      d.unshift("TET");
+      document.writeln("Thêm phần tử vào đầu d.unshift() : ");
+      document.writeln(d + "<br>");
+      d = d.join("");
+      document.writeln("Mảng thành chuỗi n.join() : ");
+      document.writeln(d + "<br>");
+      let so = 100000000002;
+      socuoi = [so.length - 1];
+      socuoi = parseInt;
+      if (so % 2 == 0) {
+        document.writeln("Số " + so + " Là Số Chẵn" + "<br>");
+      } else {
+        document.writeln("Số " + so + " Là Số Lẻ" + "<br>");
+      }
+      let now = new Date().getHours();
+      if (5 <= now && now <= 10) {
+        document.writeln("Chào buổi sáng" + "<br>");
+      } else if (now <= 13) {
+        document.writeln("Chào buổi trưa" + "<br>");
+      } else if (now <= 17) {
+        document.writeln("Chào buổi chiều" + "<br>");
+      } else if (now <= 22) {
+        document.writeln("Chào buổi tối" + "<br>");
+      } else {
+        document.writeln("Chào buổi đêm" + "<br>");
+      }
+      let diema, diemb, diemc;
+      while (
+        (diema >= 10 && diema <= 0) ||
+        (diemb >= 10 && diemb <= 0) ||
+        (diemc >= 10 && diemc <= 0)
+      ) {
+        diema = parseInt(prompt("Nhap a"));
+        diemb = parseInt(prompt("Nhap b"));
+        diemc = parseInt(prompt("Nhap c"));
+      }
+      let diemtb = diema * 0.6 + diemb * 0.3 + diemc * 0.1;
+      document.writeln(diemtb);
+      if (diemtb <= 4) {
+        document.writeln("F");
+      } else if (diemtb <= 5) {
+        document.writeln("D");
+      } else if (diemtb <= 7) {
+        document.writeln("C");
+      } else {
+        document.writeln("B");
+      }
+    </script>
+  </body>
+</html>
