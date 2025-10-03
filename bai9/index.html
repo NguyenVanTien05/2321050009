@@ -58,15 +58,11 @@
         document.writeln("Chào buổi đêm" + "<br>");
       }
       let diema, diemb, diemc;
-      while (
-        (diema >= 10 && diema <= 0) ||
-        (diemb >= 10 && diemb <= 0) ||
-        (diemc >= 10 && diemc <= 0)
-      ) {
-        diema = parseInt(prompt("Nhap a"));
-        diemb = parseInt(prompt("Nhap b"));
-        diemc = parseInt(prompt("Nhap c"));
-      }
+      do {
+        diema = parseInt(prompt("Nhập điểm a : "));
+        diemb = parseInt(prompt("Nhập điểm b : "));
+        diemc = parseInt(prompt("Nhập điểm c : "));
+      } while ((diema, diemb, diemc < 0 || diema, diemb, diemc > 10));
       let diemtb = diema * 0.6 + diemb * 0.3 + diemc * 0.1;
       document.writeln(diemtb);
       if (diemtb <= 4) {

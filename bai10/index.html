@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let today = new Date();
+      let theday = today.getDate();
+      switch (theday) {
+        case 1:
+          document.writeln("Tesst1");
+          break;
+        case 2:
+          document.writeln("Tesst2");
+          break;
+        case 3:
+          document.writeln("Tesst3");
+          break;
+        case 4:
+          document.writeln("Tesst4");
+          break;
+        case 5:
+          document.writeln("Tesst5");
+          break;
+        case 6:
+        case 7:
+        case 8:
+          document.writeln("123456789");
+          break;
+      }
+      let danhSach = [
+        "Dương Trần Nhật	Anh ",
+        "Dương Vũ	Anh ",
+        "Trần Vũ Hải	Anh ",
+        "Bùi Ngọc	Bích ",
+        "Phạm Quốc	Bình ",
+        "Nguyễn Văn	Chung ",
+        "Hoàng Mạnh	Cường ",
+        "Ngô Hoàng	Dương ",
+        "Phạm Văn	Đại ",
+        "Nguyễn Đình	Đạt ",
+        "Phạm	Đức ",
+        "Vũ Trung	Đức ",
+        "Phạm Hương	Giang ",
+        "Phạm Quang	Hậu ",
+        "Trần Văn	Hiệp ",
+        "Nguyễn Văn	Hoàng ",
+        "Phạm Quốc	Hoàng ",
+        "Phạm Thị	Huế ",
+        "Trần Công	Hùng ",
+        "Đào Thế	Huy ",
+        "Đỗ Quang	Huy ",
+        "Phạm Quang	Huy ",
+        "Phạm Thành	Khang ",
+        "Bùi Văn	Khiêm ",
+        "Nguyễn Tiến	Khởi ",
+        "Đỗ Trung	Kiên ",
+        "Vương Hà	Linh ",
+        "Đào Quang	Lộc ",
+        "Ngô Gia	Lộc ",
+        "Bùi Văn	Mạnh ",
+        "Nguyễn Văn	Mạnh ",
+        "Phan Văn	Mạnh ",
+        "Trương Công	Minh ",
+        "Đỗ Thành	Nam ",
+        "Lê Duy	Nam ",
+        "Nguyễn Hoàng	Nam ",
+        "Nguyễn Anh	Quân ",
+        "Cao Thị Thu	Quyên ",
+        "Phạm Gia	Tài ",
+        "Nguyễn Thị Thanh	Tâm © ",
+        "Nguyễn Đình	Thái ",
+        "Lưu Tiến	Thành ",
+        "Trần Văn	Thành ",
+        "Nguyễn Thị	Thúy ",
+        "Nguyễn Thị	Thúy ",
+        "Bùi Duy	Tiến ",
+        "Nguyễn Văn	Tiến ",
+        "Đỗ Văn	Trung ",
+        "Phạm Đan	Trường ",
+        "Lê Thị Cẩm	Tú ",
+        "Phan Văn	Tuân ",
+        "Cao Thái	Tuấn ",
+        "Nguyễn Duy	Tuấn ",
+        "Nguyễn Huy	Tuấn ",
+        "Thiều Văn	Việt ",
+        "Nguyễn Kiều	Vy",
+      ];
+      let dem = 0;
+      for (i = 0; i < danhSach.length; i++) {
+        if (danhSach[i].toLocaleUpperCase().startsWith("NGUYỄN") == true) {
+          dem = dem + 1;
+        }
+      }
+      document.writeln(dem);
+      alert("Hello");
+      let result = confirm("Bam Nhanh");
+      if (result == true) {
+        document.writeln("OK");
+      } else document.writeln("cancel");
+      let result2 = prompt("Biet Nhap KO");
+      document.writeln(result2);
+      function hamne() {
+        document.writeln("OKLA" + result + result2);
+      }
+      hamne(result, result2);
+    </script>
+  </body>
+</html>
