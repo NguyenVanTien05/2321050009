@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tinh Tong</h1>
+    Diem a :
+    <input type="number" id="a" /><br /><br />
+    Diem b :
+    <input type="number" id="b" /><br /><br />
+    Diem c :
+    <input type="number" id="c" /><br /><br />
+    <button onclick="tinhtong()">Tinh Diem</button><br /><br />
+    Ket qua :
+    <input type="number" id="ketqua" /><br /><br />
+    Diem Chu :
+    <input type="text" id="diemchu" />
+    <script>
+      function tinhtong() {
+        let diema = Number(document.getElementById("a").value);
+        let diemb = Number(document.getElementById("b").value);
+        let diemc = Number(document.getElementById("c").value);
+        let canhbao = "";
+        if (!diema) {
+          canhbao += "Vui long nhap diem a";
+        }
+        if (!diemb) {
+          canhbao += "Vui long nhap diem b";
+        }
+        if (!diemc) {
+          canhbao += "Vui long nhap diem c";
+        }
+        if (canhbao) {
+          alert(canhbao);
+        }
+        let tong = diema * 0.6 + diemb * 0.3 + diemc * 0.1;
+        document.getElementById("ketqua").value = tong;
+        let diemchu = "";
+        if (tong <= 4) diemchu = "F";
+        else if (tong <= 5) diemchu = "D";
+        else if (tong <= 7) diemchu = "C";
+        else if (tong <= 8) diemchu = "B";
+        else diemchu = "A";
+        document.getElementById("diemchu").value = diemchu;
+      }
+    </script>
+  </body>
+</html>
