@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .form {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <div class="vdthaydoi">
+        <div><h1>Ví dụ thay đổi che do sang</h1></div>
+      </div>
+      <div>
+        <img
+          class="anh"
+          width="40%"
+          src="Screenshot 2025-10-25 112940.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <h2>Che do sang</h2>
+      </div>
+      <div>
+        <button onclick="thaydoi()">Thay doi che do sang</button>
+      </div>
+    </div>
+    <script>
+      let chedo = true;
+      function thaydoi() {
+        if (chedo == true) {
+          document.getElementsByTagName("body")[0].style =
+            "background-color: black";
+          document.getElementsByTagName("h1")[0].style = "color: white";
+          document.getElementsByTagName("h2")[0].style = "color: red";
+          document.getElementsByTagName("div")[1].style = "color: red";
+          document.getElementsByTagName("h2")[0].innerText = "Che do toi";
+          document.getElementsByClassName("anh")[0].src =
+            "Screenshot 2025-10-25 114903.png";
+          chedo = false;
+        } else {
+          document.getElementsByTagName("body")[0].style =
+            "background-color: white";
+          document.getElementsByTagName("h1")[0].style = "color: black";
+          document.getElementsByTagName("h2")[0].style = "color: black";
+          document.getElementsByTagName("div")[1].style = "color: black";
+          document.getElementsByTagName("h2")[0].innerText = "Che do sang";
+          document.getElementsByClassName("anh")[0].src =
+            "Screenshot 2025-10-25 112940.png";
+          chedo = true;
+        }
+      }
+    </script>
+  </body>
+</html>

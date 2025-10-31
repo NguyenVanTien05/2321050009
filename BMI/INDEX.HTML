@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 100%;
+      }
+      .form {
+        border: 1px solid black;
+        margin-left: 500px;
+        margin-right: 500px;
+        border-radius: 10px;
+        background-color: bisque;
+      }
+      .tess {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <div class="tess">
+        <div class="tess1">
+          Can nang :
+          <input type="number" id="a" placeholder="KG" /><br /><br />
+          Chieu cao :
+          <input type="number" id="b" placeholder="M" /><br /><br />
+          <button onclick="tinhbmi()">Tinh BMI</button><br /><br />
+          KetQua :
+          <input type="number" id="ketqua" /><br /><br />
+        </div>
+        <div>
+          <img class="anh" width="30%" src="ANH/1.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <script>
+      function tinhbmi() {
+        let cannang = Number(document.getElementById("a").value);
+        let chieucao = Number(document.getElementById("b").value);
+        let canhbao = "";
+        if (!cannang) {
+          canhbao += "Vui long nhap diem can nang";
+        }
+        if (!chieucao) {
+          canhbao += "Vui long nhap diem chieu cao";
+        }
+        if (canhbao) {
+          alert(canhbao);
+        }
+        let bmi = cannang / (chieucao * chieucao);
+        document.getElementById("ketqua").value = bmi;
+        if (bmi < 18.5) {
+          document.getElementsByClassName("anh")[0].src = "ANH/1.jpg";
+        } else if (bmi < 24.9) {
+          document.getElementsByClassName("anh")[0].src = "ANH/5.jpg";
+        } else if (bmi < 29.9) {
+          document.getElementsByClassName("anh")[0].src = "ANH/2.jpg";
+        } else if (bmi < 39.9) {
+          document.getElementsByClassName("anh")[0].src = "ANH/3.jpg";
+        } else {
+          document.getElementsByClassName("anh")[0].src = "ANH/4.jpg";
+        }
+      }
+    </script>
+  </body>
+</html>

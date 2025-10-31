@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tinh Tong</h1>
+    Diem a :
+    <input type="number" id="a" /><br /><br />
+    Diem b :
+    <input type="number" id="b" /><br /><br />
+    <button onclick="tinhtong()">Tinh Diem</button><br /><br />
+    <button onclick="tinhhieu()">Tinh Hieu</button><br /><br />
+    <button onclick="tinhtich()">Tinh Tich</button><br /><br />
+    <button onclick="tinhthuong()">Tinh Thuong</button><br /><br />
+    Tong :
+    <input type="number" id="ketqua" /><br /><br />
+    Hieu :
+    <input type="number" id="ketqua1" /><br /><br />
+    Tich :
+    <input type="number" id="ketqua2" /><br /><br />
+    Thuong :
+    <input type="number" id="ketqua3" /><br /><br />
+    <script>
+      function tinhtong() {
+        let diema = Number(document.getElementById("a").value);
+        let diemb = Number(document.getElementById("b").value);
+        let canhbao = "";
+        if (!diema) {
+          canhbao += "Vui long nhap diem a";
+        }
+        if (!diemb) {
+          canhbao += "Vui long nhap diem b";
+        }
+        if (canhbao) {
+          alert(canhbao);
+        }
+        let tong = diema + diemb;
+        document.getElementById("ketqua").value = tong;
+      }
+      function tinhhieu() {
+        let diema = Number(document.getElementById("a").value);
+        let diemb = Number(document.getElementById("b").value);
+        let canhbao = "";
+        if (!diema) {
+          canhbao += "Vui long nhap diem a";
+        }
+        if (!diemb) {
+          canhbao += "Vui long nhap diem b";
+        }
+        if (canhbao) {
+          alert(canhbao);
+        }
+        let hieu = diema - diemb;
+        document.getElementById("ketqua1").value = hieu;
+      }
+      function tinhtich() {
+        let diema = Number(document.getElementById("a").value);
+        let diemb = Number(document.getElementById("b").value);
+        let canhbao = "";
+        if (!diema) {
+          canhbao += "Vui long nhap diem a";
+        }
+        if (!diemb) {
+          canhbao += "Vui long nhap diem b";
+        }
+        if (canhbao) {
+          alert(canhbao);
+        }
+        let tich = diema * diemb;
+        document.getElementById("ketqua2").value = tich;
+      }
+      function tinhthuong() {
+        let diema = Number(document.getElementById("a").value);
+        let diemb = Number(document.getElementById("b").value);
+        let canhbao = "";
+        if (!diema) {
+          canhbao += "Vui long nhap diem a";
+        }
+        if (!diemb) {
+          canhbao += "Vui long nhap diem b";
+        }
+        if (canhbao) {
+          alert(canhbao);
+        }
+        let thuong = diema / diemb;
+        document.getElementById("ketqua3").value = thuong;
+      }
+    </script>
+  </body>
+</html>
