@@ -75,6 +75,51 @@
     // Xoa
     unset($mang[3]);
     print_r($mang);
+    // Sắp xếp mảng
+    $mang2 = ["C","B","D","A"];
+    print_r($mang2);
+    echo "<br>";
+    // Tăng
+    sort($mang2);
+    print_r($mang2);
+    // Giảm
+    rsort($mang2);
+    echo "<br>";
+    print_r($mang2);
+    // 11. Kiểm tra xem biến có tồn tại hay ko
+    $biena = "Hello";
+    isset($biena);//true
+    isset($bienb);//false
+    if(isset($bienb)){
+        echo "<br>";
+        echo "bien nay co ton tai";
+    }
+    else{
+        echo "<br>";
+        echo "bien nay ko ton tai";
+    }
+    // Check empty
+    $check = "";
+    if(empty($check)){
+        echo "<br>";
+        echo "empty";
+    }
+    else{
+        echo "<br>";
+        echo "not empty";
+    }
+    // 12.Hàm
+    // KO THAM SO
+    function xinchao(){
+        return "Hello";
+    }
+    echo xinchao();
+    // CO THAM SO
+    function xinchao2($biena){
+        return "Hello".$biena;
+    }
+    echo xinchao2("Anh");
+    
  ?>
 </body>
 </html>
