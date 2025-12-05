@@ -79,13 +79,9 @@ function chonphim(idphim) {
       bannerImg.src = danhsachphim[i].poster;
       bannerImg.style.display = "block";
       tenphimbaner.innerHTML = danhsachphim[i].tenphim;
-      noidungphimbaner.innerHTML =
-        danhsachphim[i].namphathanh +
-        " · " +
-        danhsachphim[i].theloai +
-        " · " +
-        danhsachphim[i].quocgia;
-
+      noidungphimbanner.innerHTML = `
+  ${danhsachphim[i].namphathanh} • ${danhsachphim[i].theloai} • ${danhsachphim[i].quocgia}
+`;
       setTimeout(() => {
         let trailer = danhsachphim[i].trailer;
         if (!trailer) return;

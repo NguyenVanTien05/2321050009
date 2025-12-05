@@ -23,6 +23,7 @@
             $tendangnhap = $_POST['user'];
             $matkhau = $_POST['password'];
             if($tendangnhap == 'admin'&& $matkhau == '123'){
+                $_SESSION["user"] = $tendangnhap;
                 header('location: trangchu.php');
             }
             else{
